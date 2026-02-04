@@ -1,0 +1,17 @@
+{
+  "name": "ESNext-oef",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./js/monster.js",
+    "json": "json-server db.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.28.2",
+  "dependencies": {
+    "json-server": "0.17.4"
+  }
+}
