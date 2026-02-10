@@ -1,4 +1,4 @@
-const actrices = [
+export const actrices = [
   {
     naam: 'Zoe Kravitz',
     geboorteJaar: 1988,
@@ -68,33 +68,3 @@ const actrices = [
     geboorteJaar: 1983,
   },
 ];
-
-function getAge(birthYear) {
-  return new Date().getFullYear() - birthYear;
-}
-
-function lastname(name) {
-  return name.split(' ')[1];
-}
-
-function avg(...numbers) {
-  let total = numbers.reduce((acc, num) => acc + num, 0);
-  return total / numbers.length;
-}
-
-let table = document.getElementById('actrices-lijst');
-console.log(getAge(actrices[0].geboorteJaar));
-console.log(lastname(actrices[0].naam));
-actrices
-  .sort((a, b) => lastname(a.naam).localeCompare(lastname(b.naam)))
-  .forEach((actrice) => {
-    let row = table.insertRow();
-    let nameCell = row.insertCell(0);
-    let birthYearCell = row.insertCell(1);
-    let ageCell = row.insertCell(2);
-    nameCell.textContent = actrice.naam;
-    birthYearCell.textContent = actrice.geboorteJaar;
-    ageCell.textContent = getAge(actrice.geboorteJaar);
-  });
-
-console.log('Het gemiddelde moet 5 zijn. Resultaat: ' + avg(8, 4, 5, 3));
