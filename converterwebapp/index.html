@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convention converter</title>
+  </head>
+  <body class="container">
+    <h1>Convention Converter</h1>
+    <form>
+      <fieldset>
+        <legend>Voer je te converteren text in</legend>
+        <div class="textContainer">
+          <textarea name="input" id="input" cols="50" rows="5"></textarea>
+        </div>
+        <div class="options">
+          <select id="selectLan">
+            <option value="JavaScript">JavaScript</option>
+            <option value="html">html</option>
+            <option value="English">English</option>
+          </select>
+          <select id="selectEl">
+            <option value="var">Variable</option>
+            <option value="method">Method</option>
+            <option value="constant">Constant</option>
+            <option value="class">Class</option>
+          </select>
+          <button id="convertButton" type="button">Converteer</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
+<script type="module" src="src/ts/converter.ts" defer></script>
