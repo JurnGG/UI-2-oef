@@ -5,7 +5,8 @@ Exercises made in UI2 during semester 3-4 in 2026
 
 ## Usage
 Each folder has its own dependencies. Install them with pnpm install, then run the .js file using:
-```node <filename>.js``` or use vite with ```pnpm vite```
+
+```node <filename>.js``` or use vite with ```pnpm dev```
 
 ## License
 
