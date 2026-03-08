@@ -1,0 +1,19 @@
+{
+    "name": "ruzzle",
+    "type": "module",
+    "version": "1.0.0",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/bootstrap": "^5.2.10",
+        "typescript": "~5.7.3",
+        "vite": "^6.1.0"
+    },
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "pnpm": "^10.30.3"
+    }
+}

@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+body {
+  width: 250px;
+  margin: 0 auto;
+  font-family: sans-serif;
+  font-size: 16px;
+  background-color: #428ece;
+}
+
+#lblWord {
+  background-color: #feb626;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1rem;
+  height: 1rem;
+  box-sizing: initial;
+  border-radius: 0.5rem;
+  margin: 0.5rem auto;
+  width: 80%;
+  padding: 1rem;
+}
+#lblWord:before {
+  content: '';
+}
+
+table {
+  margin: auto;
+}
+
+td {
+  padding: 5px;
+  line-height: 1em;
+}
+
+table button {
+  width: 3rem;
+  line-height: 1em;
+  height: 3rem;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  border: 0;
+  color: black;
+  background-color: whitesmoke;
+}
+
+table button:before {
+  content: '';
+}
+
+.btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button#btnStart {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 2em;
+  text-align: center;
+  color: black;
+  line-height: 1em;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border: 0;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
