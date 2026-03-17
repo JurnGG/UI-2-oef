@@ -105,10 +105,13 @@ function removeLastLetter() {
 
 function resetSelection() {
   selected.forEach((btn) => {
-    btn.classList.remove('selected');
-    btn.classList.remove('alreadyGuessed');
-    btn.classList.remove('wrongWord');
-    btn.classList.remove('rightWord');
+    btn.classList.remove(
+      'selected',
+      'alreadyGuessed',
+      'wrongWord',
+      'rightWord',
+      'shake',
+    );
   });
   wordDisplay.textContent = '';
   selected = [];
@@ -162,7 +165,7 @@ function checkWord(word: string) {
   if (guessedWords.has(word)) {
     selected.forEach((btn) => {
       wordDisplay.textContent = `${word} already guessed`;
-      btn.classList.add('alreadyGuessed');
+      btn.classList.add('alreadyGuessed', 'shake');
     });
     // wordlist is very inefficient for lookup use set instead
     //} else if (wordlist.includes(word)) {
@@ -177,7 +180,7 @@ function checkWord(word: string) {
   } else {
     selected.forEach((btn) => {
       wordDisplay.textContent = `${word} not found`;
-      btn.classList.add('wrongWord');
+      btn.classList.add('wrongWord', 'shake');
     });
   }
 
