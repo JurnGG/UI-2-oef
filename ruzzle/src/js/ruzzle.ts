@@ -157,6 +157,7 @@ function stopGame() {
     btn.innerHTML = '';
   });
   btn.innerHTML = 'Start';
+  guessedWords.clear();
 }
 
 function checkWord(word: string) {
@@ -171,7 +172,6 @@ function checkWord(word: string) {
     //} else if (wordlist.includes(word)) {
   } else if (wordDir.has(word)) {
     selected.forEach((btn) => {
-      wordDisplay.textContent = `+${word} not found`;
       btn.classList.add('rightWord');
     });
     wordDisplay.textContent = `+${word.length} points`;
