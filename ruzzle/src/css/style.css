@@ -86,3 +86,23 @@ button#btnStart {
   background-color: whitesmoke;
   cursor: pointer;
 }
+
+.selected {
+  background-color: #feb626;
+  color: white;
+}
+
+.alreadyGuessed {
+  background-color: #d68c45;
+  color: white;
+}
+
+.wrongWord {
+  background-color: #c52233;
+  color: white;
+}
+
+.rightWord {
+  background-color: #4c956c;
+  color: white;
+}
