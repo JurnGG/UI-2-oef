@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>vite-project</title>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+  <body>
+    <form>
+      <div class="flex flex-col p-8 gap-2">
+        <fieldset class="fieldset">
+          <legend class="text-gray-400 text-base">Naam</legend>
+          <input
+            name="name"
+            type="text"
+            class="input w-full"
+            placeholder="Jan Kees"
+          />
+        </fieldset>
+        <fieldset class="fieldset">
+          <legend class="text-gray-400 text-base">Adres</legend>
+          <input
+            name="address"
+            type="text"
+            class="input w-full"
+            placeholder="Nationalestraat 5"
+          />
+        </fieldset>
+        <div class="flex flex-col md:flex-row gap-4">
+          <fieldset class="fieldset flex-3">
+            <legend class="text-gray-400 text-base">Gemeente</legend>
+            <input
+              name="city"
+              type="text"
+              class="input w-full"
+              placeholder="Antwerpen"
+            />
+          </fieldset>
+          <fieldset class="fieldset flex-1">
+            <legend class="text-gray-400 text-base">Postcode</legend>
+            <input
+              name="zipcode"
+              type="text"
+              maxlength="4"
+              pattern="\d{4}"
+              inputmode="numeric"
+              class="input w-full"
+              placeholder="2000"
+            />
+          </fieldset>
+        </div>
+        <div class="flex items-center gap-2">
+          <input
+            name="agreement"
+            type="checkbox"
+            checked="checked"
+            class="checkbox"
+          />
+          <p class="p-0 text-gray-400 text-sm whitespace-normal">
+            Ik ga akkoord dat mijn gegevens voor alle doeleinden gebruikt mogen
+            worden
+          </p>
+        </div>
+        <div
+          name="alert"
+          role="alert"
+          class="alert alert-error alert-soft hidden"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 shrink-0 stroke-current"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+          <div class="flex flex-col gap-4">
+            <span class="font-semibold"
+              >Gelieve het formulier na te kijken</span
+            >
+            <div name="error" class="flex flex-col"></div>
+          </div>
+        </div>
+        <div class="flex justify-center items-center">
+          <button type="submit" class="btn btn-primary">Verstuur</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

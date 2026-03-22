@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+@plugin "daisyui" {
+  /* this config block is optional and only sets defaults except include which forces the loading of some classes
+    /*themes: light --default, dark --prefersdark;*/
+  /*root: ":root";*/
+  /*include: btn, card, hero, modal, navbar, footer;*/
+  /*exclude: ;*/
+  /*prefix: ;*/
+  /*logs: true;*/
+}
+
+@theme {
+  --color-mint-500: oklch(0.72 0.11 178);
+}
+
+@layer base {
+  html {
+    font-family: Inter, sans-serif;
+  }
+
+  p {
+    @apply py-6;
+  }
+}
+
+/*
+Customize all .btn here with tailwind's @apply rule:
+*/
+
+/*@utility btn {*/
+/*    @apply rounded-full;*/
+/*}*/
