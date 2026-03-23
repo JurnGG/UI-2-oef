@@ -1,0 +1,52 @@
+{
+  "products": [
+    {
+      "id": 3,
+      "title": "Kop",
+      "image" : "mug.webp",
+      "idDetail": 3
+    },
+    {
+      "id": 2,
+      "title": "Schoen",
+      "image" : "shoe.webp",
+      "idDetail": 4
+    },
+    {
+      "id": 1,
+      "title": "Jas",
+      "image" : "jacket.webp",
+      "idDetail": 2
+    },
+    {
+      "id": 4,
+      "title": "Koffer",
+      "image" : "bag.webp",
+      "idDetail": 1
+    }
+  ],
+  "details": [
+    {
+      "id": 1,
+      "description": "Met deze koffer aan de hand reis je door het hele land.",
+      "primary": "KORTING",
+      "secondary": ["REIZEN", "STOCK"]
+    },
+    {
+      "id": 2,
+      "description": "Je zal vergeten deze jas nu en dan ooit nog eens uit te doen.",
+      "secondary": ["KLEDING"]
+    },
+    {
+      "id": 3,
+      "description": "Zoals je dit kopje thuis drinkt, drink je het nergens.",
+      "primary": "NIEUW",
+      "secondary": ["INTERIEUR", "WEB"]
+    },
+    {
+      "id": 4,
+      "description": "Met deze schoenen loop je nooit meer achter de feiten aan!",
+      "secondary": ["KLEDING", "STOCK", "WEB"]
+    }
+  ]
+}

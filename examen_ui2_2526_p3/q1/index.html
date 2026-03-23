@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MyPlace</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+  <body>
+    <nav class="navbar bg-base-300 shadow-sm">
+      <div class="navbar-start">
+        <h2 class="font-bold whitespace-nowrap">MyPlace</h2>
+        <ul class="menu menu-horizontal px-16 min-w-full hidden md:flex">
+          <li><a href="#home" class="kdg-tab-link active">Home</a></li>
+          <li><a href="#work" class="kdg-tab-link">Work</a></li>
+          <li><a href="#holiday" class="kdg-tab-link">Holiday</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <div class="md:hidden block dropdown dropdown-end">
+          <div tabindex="0" role="button" class="btn btn-ghost">
+            <!-- menu icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="-1"
+            class="menu menu-sm dropdown-content bg-base-300 rounded-box z-1 mt-3 w-52 p-2 shadow"
+          >
+            <li><a href="#home" class="kdg-tab-link active">Home</a></li>
+            <li><a href="#work" class="kdg-tab-link">Work</a></li>
+            <li><a href="#holiday" class="kdg-tab-link">Holiday</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="p-4">
+      <div id="home" class="kdg-tab-content active">
+        <h2>Home</h2>
+      </div>
+      <div id="work" class="kdg-tab-content">
+        <h2>Work</h2>
+      </div>
+      <div id="holiday" class="kdg-tab-content"><h2>Holiday</h2></div>
+    </main>
+  </body>
+</html>

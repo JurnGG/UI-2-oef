@@ -1,0 +1,16 @@
+.kdg-tab-content.active {
+  display: block;
+}
+.kdg-tab-link.active {
+  border: solid;
+  display: block;
+}
+
+main > div {
+  display: none;
+}
+
+main > div > h2 {
+  font-size: 2rem;
+  text-align: center;
+}
