@@ -1,0 +1,34 @@
+{
+    "pizzas": [
+        {
+            "id": 1,
+            "name": "Pizza Margherita",
+            "price": 11,
+            "image": "margherita.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Pizza Calzone",
+            "price": 12,
+            "image": "calzone.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Pizza Hawaii",
+            "price": 13,
+            "image": "hawaii.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Pizza Quattro Stagioni",
+            "price": 14,
+            "image": "quattro_stagioni.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Pizza Primavera",
+            "price": 15,
+            "image": "primavera.jpg"
+        }
+    ]
+}
