@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+@plugin 'daisyui' {
+  themes: luxury --default;
+}
+@layer base {
+  html {
+    font-family: Inter, sans-serif;
+  }
+}
