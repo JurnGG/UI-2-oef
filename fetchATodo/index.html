@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>vite-project</title>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+  <body>
+    <div class="flex flex-col p-6 gap-2">
+      <h1>TODO form</h1>
+      <div class="flex flex-col gap-4">
+        <div class="flex gap-4 items-center">
+          <label class="flex-1">Id</label>
+          <input id="id" type="number" placeholder="44" class="input flex-6" />
+        </div>
+        <div
+          id="alert"
+          role="alert"
+          class="alert alert-error alert-soft ml-50 hidden"
+        ></div>
+        <div class="flex gap-4 items-center">
+          <label class="flex-1" for="title">Title</label>
+          <input id="title" type="text" class="input flex-6" disabled />
+        </div>
+        <div class="flex gap-4 ml-50">
+          <input
+            id="completed"
+            type="checkbox"
+            checked="checked"
+            class="checkbox"
+          />
+          <p>Completed</p>
+        </div>
+        <div class="flex">
+          <button class="btn btn-primary px-10">Fetch</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

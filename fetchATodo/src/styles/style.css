@@ -1,0 +1,10 @@
+@import 'tailwindcss';
+@plugin "daisyui";
+
+:root {
+  --h1-size: 25px;
+}
+
+h1 {
+  font-size: var(--h1-size);
+}
