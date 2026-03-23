@@ -6,7 +6,7 @@ export function validateName(name: string): boolean {
 }
 
 export function validateAddress(address: string): boolean {
-  return /.*[0-9]/.test(address);
+  return /.*[0-9]$/.test(address);
 }
 
 export function validateCity(city: string): boolean {
