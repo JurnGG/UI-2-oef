@@ -8,9 +8,13 @@ export type BasisProduct = {
 };
 export type Product = {
   details: ProductDetails;
-  product: BasisProduct;
+  id: number;
+  title: string;
+  image: string;
 };
 export type JsonProduct = {
   idDetail: number;
-  product: BasisProduct;
+  id: number;
+  title: string;
+  image: string;
 };

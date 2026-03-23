@@ -24,6 +24,7 @@ export async function getProducten(): Promise<Product[] | null> {
     return null;
   }
   const jsonProducts = (await response.json()) as JsonProduct[];
+
   console.log(jsonProducts);
   let products: Product[] = [];
   jsonProducts.forEach(async (jsonproduct: JsonProduct) => {
@@ -31,7 +32,9 @@ export async function getProducten(): Promise<Product[] | null> {
     const detail = await fetch(`${DETAIL_URL}/${jsonproduct.idDetail}`);
     const product: Product = {
       details: (await detail.json()) as ProductDetails,
-      product: jsonproduct.product,
+      title: jsonproduct.title,
+      id: jsonproduct.id,
+      image: jsonproduct.image,
     };
     products.push(product);
   });
